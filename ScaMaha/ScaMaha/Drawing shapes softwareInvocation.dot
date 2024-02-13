@@ -1,0 +1,133 @@
+digraph G {
+rankdir=RL;
+graph [fontsize=10 fontname="Verdana" compound=true];
+node [shape=record fontsize=10 fontname="Verdana"];
+subgraph cluster_Drawing_shapes_software{
+label =Drawing_shapes_software;
+style=filled;
+fillcolor=azure1;
+subgraph cluster_Drawing{
+label =Drawing;
+style=filled;
+fillcolor=yellow;
+-717304834[shape=point, color=yellow];
+}
+subgraph cluster_Drawing_Shapes{
+label =Drawing_Shapes;
+style=filled;
+fillcolor=yellow;
+501846274[shape=point, color=yellow];
+}
+subgraph cluster_Drawing_Shapes_coreElements{
+label =Drawing_Shapes_coreElements;
+style=filled;
+fillcolor=yellow;
+subgraph cluster_MyRectangle{
+label =MyRectangle;
+style=filled;
+fillcolor=bisque1;
+-104331005[shape=underline,style=filled,fillcolor=olivedrab1,label="MyRectangle\n"];
+3091780[shape=underline,style=filled,fillcolor=olivedrab1,label="draw\n"];
+3091780->98245807[color="red;0.50:blue"];
+3091780->98245808[color="red;0.50:blue"];
+3091780->98245838[color="red;0.50:blue"];
+3091780->98245839[color="red;0.50:blue"];
+3091780->98245807[color="red;0.50:blue"];
+3091780->98245808[color="red;0.50:blue"];
+3091780->98245838[color="red;0.50:blue"];
+3091780->98245839[color="red;0.50:blue"];
+3091780->1389555745[color="red;0.50:blue"];
+3091780->1950668205[color="red;0.50:blue"];
+}
+subgraph cluster_MyOval{
+label =MyOval;
+style=filled;
+fillcolor=bisque1;
+-1976306626[shape=underline,style=filled,fillcolor=olivedrab1,label="MyOval\n"];
+3091780[shape=underline,style=filled,fillcolor=olivedrab1,label="draw\n"];
+3091780->98245807[color="red;0.50:blue"];
+3091780->98245808[color="red;0.50:blue"];
+3091780->98245838[color="red;0.50:blue"];
+3091780->98245839[color="red;0.50:blue"];
+3091780->98245807[color="red;0.50:blue"];
+3091780->98245808[color="red;0.50:blue"];
+3091780->98245838[color="red;0.50:blue"];
+3091780->98245839[color="red;0.50:blue"];
+3091780->1389555745[color="red;0.50:blue"];
+3091780->1950668205[color="red;0.50:blue"];
+}
+subgraph cluster_MyLine{
+label =MyLine;
+style=filled;
+fillcolor=bisque1;
+-1976408096[shape=underline,style=filled,fillcolor=olivedrab1,label="MyLine\n"];
+3091780[shape=underline,style=filled,fillcolor=olivedrab1,label="draw\n"];
+3091780->1389555745[color="red;0.50:blue"];
+3091780->1950668205[color="red;0.50:blue"];
+3091780->98245807[color="red;0.50:blue"];
+3091780->98245838[color="red;0.50:blue"];
+3091780->98245808[color="red;0.50:blue"];
+3091780->98245839[color="red;0.50:blue"];
+}
+}
+subgraph cluster_Drawing_Shapes_coreFrame{
+label =Drawing_Shapes_coreFrame;
+style=filled;
+fillcolor=yellow;
+subgraph cluster_PaintJPanel{
+label =PaintJPanel;
+style=filled;
+fillcolor=bisque1;
+88938904[shape=underline,style=filled,fillcolor=olivedrab1,label="PaintJPanel\n"];
+88938904->-1788058219[color="red;0.50:blue"];
+88938904->442736389[color="red;0.50:blue"];
+771821956[shape=underline,style=filled,fillcolor=olivedrab1,label="setCurrentShapeType\n"];
+-314797332[shape=underline,style=filled,fillcolor=olivedrab1,label="setCurrentColor\n"];
+-1788058219[shape=underline,style=filled,fillcolor=olivedrab1,label="paintJPanelMousePressed\n"];
+442736389[shape=underline,style=filled,fillcolor=olivedrab1,label="paintJPanelMouseDragged\n"];
+442736389->109328060[color="red;0.50:blue"];
+442736389->109328091[color="red;0.50:blue"];
+672648767[shape=underline,style=filled,fillcolor=olivedrab1,label="paintComponent\n"];
+672648767->3091780[color="red;0.50:blue"];
+}
+subgraph cluster_DrawingShapes{
+label =DrawingShapes;
+style=filled;
+fillcolor=bisque1;
+263382672[shape=underline,style=filled,fillcolor=olivedrab1,label="DrawingShapes\n"];
+263382672->-206193134[color="red;0.50:blue"];
+-206193134[shape=underline,style=filled,fillcolor=olivedrab1,label="createUserInterface\n"];
+-206193134->-1036374012[color="red;0.50:blue"];
+-206193134->-1292346991[color="red;0.50:blue"];
+-1292346991[shape=underline,style=filled,fillcolor=olivedrab1,label="colorJButtonActionPerformed\n"];
+-1292346991->-314797332[color="red;0.50:blue"];
+-1036374012[shape=underline,style=filled,fillcolor=olivedrab1,label="shapeJComboBoxActionPerformed\n"];
+-1036374012->771821956[color="red;0.50:blue"];
+3343801[shape=underline,style=filled,fillcolor=olivedrab1,label="main\n"];
+}
+subgraph cluster_MyShape{
+label =MyShape;
+style=filled;
+fillcolor=bisque1;
+-1132686027[shape=underline,style=filled,fillcolor=olivedrab1,label="MyShape\n"];
+-1132686027->109328059[color="red;0.50:blue"];
+-1132686027->109328090[color="red;0.50:blue"];
+-1132686027->109328060[color="red;0.50:blue"];
+-1132686027->109328091[color="red;0.50:blue"];
+-1132686027->1389555745[color="red;0.50:blue"];
+109328059[shape=underline,style=filled,fillcolor=olivedrab1,label="setX1\n"];
+98245807[shape=underline,style=filled,fillcolor=olivedrab1,label="getX1\n"];
+109328090[shape=underline,style=filled,fillcolor=olivedrab1,label="setY1\n"];
+98245838[shape=underline,style=filled,fillcolor=olivedrab1,label="getY1\n"];
+109328060[shape=underline,style=filled,fillcolor=olivedrab1,label="setX2\n"];
+98245808[shape=underline,style=filled,fillcolor=olivedrab1,label="getX2\n"];
+109328091[shape=underline,style=filled,fillcolor=olivedrab1,label="setY2\n"];
+98245839[shape=underline,style=filled,fillcolor=olivedrab1,label="getY2\n"];
+1389555745[shape=underline,style=filled,fillcolor=olivedrab1,label="setColor\n"];
+1950668205[shape=underline,style=filled,fillcolor=olivedrab1,label="getColor\n"];
+3091780[shape=underline,style=filled,fillcolor=olivedrab1,label="draw\n"];
+}
+}
+}
+}
+}

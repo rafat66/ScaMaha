@@ -1,0 +1,91 @@
+digraph G {
+rankdir=RL;
+graph [fontsize=10 fontname="Verdana" compound=true];
+node [shape=record fontsize=10 fontname="Verdana"];
+subgraph cluster_Drawing_shapes_software{
+label =Drawing_shapes_software;
+style=filled;
+fillcolor=azure1;
+subgraph cluster_Drawing{
+label =Drawing;
+style=filled;
+fillcolor=yellow;
+-717304834[shape=point, color=yellow];
+}
+subgraph cluster_Drawing_Shapes{
+label =Drawing_Shapes;
+style=filled;
+fillcolor=yellow;
+501846274[shape=point, color=yellow];
+}
+subgraph cluster_Drawing_Shapes_coreElements{
+label =Drawing_Shapes_coreElements;
+style=filled;
+fillcolor=yellow;
+subgraph cluster_MyRectangle{
+label =MyRectangle;
+style=filled;
+fillcolor=bisque1;
+-387624928[shape=underline,style=filled,fillcolor=cadetblue1,label="MyRectangle\n"];
+1425341639[shape=underline,style=filled,fillcolor=cadetblue1,label="draw\n"];
+}
+subgraph cluster_MyOval{
+label =MyOval;
+style=filled;
+fillcolor=bisque1;
+-1570553348[shape=underline,style=filled,fillcolor=cadetblue1,label="MyOval\n"];
+-1431121278[shape=underline,style=filled,fillcolor=cadetblue1,label="draw\n"];
+}
+subgraph cluster_MyLine{
+label =MyLine;
+style=filled;
+fillcolor=bisque1;
+305096640[shape=underline,style=filled,fillcolor=cadetblue1,label="MyLine\n"];
+-651516636[shape=underline,style=filled,fillcolor=cadetblue1,label="draw\n"];
+}
+}
+subgraph cluster_Drawing_Shapes_coreFrame{
+label =Drawing_Shapes_coreFrame;
+style=filled;
+fillcolor=yellow;
+subgraph cluster_PaintJPanel{
+label =PaintJPanel;
+style=filled;
+fillcolor=bisque1;
+-2004840192[shape=underline,style=filled,fillcolor=cadetblue1,label="PaintJPanel\n"];
+-644177684[shape=underline,style=filled,fillcolor=cadetblue1,label="setCurrentShapeType\n"];
+831919700[shape=underline,style=filled,fillcolor=cadetblue1,label="setCurrentColor\n"];
+-1319108355[shape=underline,style=filled,fillcolor=cadetblue1,label="paintJPanelMousePressed\n"];
+911686253[shape=underline,style=filled,fillcolor=cadetblue1,label="paintJPanelMouseDragged\n"];
+709639639[shape=underline,style=filled,fillcolor=cadetblue1,label="paintComponent\n"];
+}
+subgraph cluster_DrawingShapes{
+label =DrawingShapes;
+style=filled;
+fillcolor=bisque1;
+-517527040[shape=underline,style=filled,fillcolor=cadetblue1,label="DrawingShapes\n"];
+1147514242[shape=underline,style=filled,fillcolor=cadetblue1,label="createUserInterface\n"];
+-1506158335[shape=underline,style=filled,fillcolor=cadetblue1,label="colorJButtonActionPerformed\n"];
+-350645388[shape=underline,style=filled,fillcolor=cadetblue1,label="shapeJComboBoxActionPerformed\n"];
+-1745869751[shape=underline,style=filled,fillcolor=cadetblue1,label="main\n"];
+}
+subgraph cluster_MyShape{
+label =MyShape;
+style=filled;
+fillcolor=bisque1;
+-851662240[shape=underline,style=filled,fillcolor=cadetblue1,label="MyShape\n"];
+1410177702[shape=underline,style=filled,fillcolor=cadetblue1,label="setX1\n"];
+1399095450[shape=underline,style=filled,fillcolor=cadetblue1,label="getX1\n"];
+1410177733[shape=underline,style=filled,fillcolor=cadetblue1,label="setY1\n"];
+1399095481[shape=underline,style=filled,fillcolor=cadetblue1,label="getY1\n"];
+1410177703[shape=underline,style=filled,fillcolor=cadetblue1,label="setX2\n"];
+1399095451[shape=underline,style=filled,fillcolor=cadetblue1,label="getX2\n"];
+1410177734[shape=underline,style=filled,fillcolor=cadetblue1,label="setY2\n"];
+1399095482[shape=underline,style=filled,fillcolor=cadetblue1,label="getY2\n"];
+1511358550[shape=underline,style=filled,fillcolor=cadetblue1,label="setColor\n"];
+2072471010[shape=underline,style=filled,fillcolor=cadetblue1,label="getColor\n"];
+1430527993[shape=underline,style=filled,fillcolor=cadetblue1,label="draw\n"];
+}
+}
+}
+}

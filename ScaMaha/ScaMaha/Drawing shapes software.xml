@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ProjectName="Drawing shapes software">
+  <Packages>
+    <Package PackageName="Drawing">
+      <Classes />
+    </Package>
+    <Package PackageName="Drawing.Shapes">
+      <Classes />
+    </Package>
+    <Package PackageName="Drawing.Shapes.coreElements">
+      <Classes>
+        <Class ClassName="MyRectangle" classAccessLevel="public" isInterface="false" Superclass="MyShape" DeclaredPackage="Drawing.Shapes.coreElements">
+          <SuperInterfaces />
+          <Comments>
+            <Comment CommentText="Class that declares a rectangle object" />
+            <Comment CommentText="constructor" />
+            <Comment CommentText="end constructor" />
+            <Comment CommentText="draw a rectangle" />
+            <Comment CommentText="end method draw" />
+            <Comment CommentText="end class MyRectangle" />
+          </Comments>
+          <Attributes />
+          <Methods>
+            <Method MethodName="MyRectangle" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyRectangle">
+              <Parameters NumberOfParameters="5">
+                <Parameter ParameterName="firstX" ParameterType="int" />
+                <Parameter ParameterName="firstY" ParameterType="int" />
+                <Parameter ParameterName="secondX" ParameterType="int" />
+                <Parameter ParameterName="secondY" ParameterType="int" />
+                <Parameter ParameterName="shapeColor" ParameterType="Color" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="firstX" AttributeAccessType="int" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyRectangle" />
+                <AttributeAccess AttributeAccessName="firstY" AttributeAccessType="int" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyRectangle" />
+                <AttributeAccess AttributeAccessName="secondX" AttributeAccessType="int" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyRectangle" />
+                <AttributeAccess AttributeAccessName="secondY" AttributeAccessType="int" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyRectangle" />
+                <AttributeAccess AttributeAccessName="shapeColor" AttributeAccessType="Color" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyRectangle" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="draw" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyRectangle">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="g" ParameterType="Graphics" />
+              </Parameters>
+              <LocalVariables>
+                <LocalVariable LocalVariableName="upperLeftX" LocalVariableType="int" />
+                <LocalVariable LocalVariableName="upperLeftY" LocalVariableType="int" />
+                <LocalVariable LocalVariableName="width" LocalVariableType="int" />
+                <LocalVariable LocalVariableName="height" LocalVariableType="int" />
+              </LocalVariables>
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="g" AttributeAccessType="Graphics" HowIsItUsed="g.setColor(getColor())" AccessedIn="draw" />
+                <AttributeAccess AttributeAccessName="g" AttributeAccessType="Graphics" HowIsItUsed="g.fillRect(upperLeftX,upperLeftY,width,height)" AccessedIn="draw" />
+                <AttributeAccess AttributeAccessName="upperLeftX" AttributeAccessType="int" HowIsItUsed="g.fillRect(upperLeftX,upperLeftY,width,height)" AccessedIn="draw" />
+                <AttributeAccess AttributeAccessName="upperLeftY" AttributeAccessType="int" HowIsItUsed="g.fillRect(upperLeftX,upperLeftY,width,height)" AccessedIn="draw" />
+                <AttributeAccess AttributeAccessName="width" AttributeAccessType="int" HowIsItUsed="g.fillRect(upperLeftX,upperLeftY,width,height)" AccessedIn="draw" />
+                <AttributeAccess AttributeAccessName="height" AttributeAccessType="int" HowIsItUsed="g.fillRect(upperLeftX,upperLeftY,width,height)" AccessedIn="draw" />
+              </AttributeAccesses>
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="min" Arguments="[getX1(), getX2()]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getX1" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getX2" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="min" Arguments="[getY1(), getY2()]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getY1" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getY2" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="abs" Arguments="[getX1() - getX2()]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getX1" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getX2" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="abs" Arguments="[getY1() - getY2()]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getY1" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getY2" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="setColor" Arguments="[getColor()]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getColor" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="fillRect" Arguments="[upperLeftX, upperLeftY, width, height]" InvokedBy="draw" />
+              </MethodInvocations>
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+          </Methods>
+        </Class>
+        <Class ClassName="MyOval" classAccessLevel="public" isInterface="false" Superclass="MyShape" DeclaredPackage="Drawing.Shapes.coreElements">
+          <SuperInterfaces />
+          <Comments>
+            <Comment CommentText="by Ra fat AL msie deen  2016" />
+            <Comment CommentText="Class that declares an oval object" />
+            <Comment CommentText="constructor" />
+            <Comment CommentText="end constructor" />
+            <Comment CommentText="draw an oval" />
+            <Comment CommentText="end method draw" />
+            <Comment CommentText="end class MyOval" />
+          </Comments>
+          <Attributes />
+          <Methods>
+            <Method MethodName="MyOval" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyOval">
+              <Parameters NumberOfParameters="5">
+                <Parameter ParameterName="firstX" ParameterType="int" />
+                <Parameter ParameterName="firstY" ParameterType="int" />
+                <Parameter ParameterName="secondX" ParameterType="int" />
+                <Parameter ParameterName="secondY" ParameterType="int" />
+                <Parameter ParameterName="shapeColor" ParameterType="Color" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="firstX" AttributeAccessType="int" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyOval" />
+                <AttributeAccess AttributeAccessName="firstY" AttributeAccessType="int" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyOval" />
+                <AttributeAccess AttributeAccessName="secondX" AttributeAccessType="int" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyOval" />
+                <AttributeAccess AttributeAccessName="secondY" AttributeAccessType="int" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyOval" />
+                <AttributeAccess AttributeAccessName="shapeColor" AttributeAccessType="Color" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyOval" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="draw" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyOval">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="g" ParameterType="Graphics" />
+              </Parameters>
+              <LocalVariables>
+                <LocalVariable LocalVariableName="upperLeftX" LocalVariableType="int" />
+                <LocalVariable LocalVariableName="upperLeftY" LocalVariableType="int" />
+                <LocalVariable LocalVariableName="width" LocalVariableType="int" />
+                <LocalVariable LocalVariableName="height" LocalVariableType="int" />
+              </LocalVariables>
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="g" AttributeAccessType="Graphics" HowIsItUsed="g.setColor(getColor())" AccessedIn="draw" />
+                <AttributeAccess AttributeAccessName="g" AttributeAccessType="Graphics" HowIsItUsed="g.fillOval(upperLeftX,upperLeftY,width,height)" AccessedIn="draw" />
+                <AttributeAccess AttributeAccessName="upperLeftX" AttributeAccessType="int" HowIsItUsed="g.fillOval(upperLeftX,upperLeftY,width,height)" AccessedIn="draw" />
+                <AttributeAccess AttributeAccessName="upperLeftY" AttributeAccessType="int" HowIsItUsed="g.fillOval(upperLeftX,upperLeftY,width,height)" AccessedIn="draw" />
+                <AttributeAccess AttributeAccessName="width" AttributeAccessType="int" HowIsItUsed="g.fillOval(upperLeftX,upperLeftY,width,height)" AccessedIn="draw" />
+                <AttributeAccess AttributeAccessName="height" AttributeAccessType="int" HowIsItUsed="g.fillOval(upperLeftX,upperLeftY,width,height)" AccessedIn="draw" />
+              </AttributeAccesses>
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="min" Arguments="[getX1(), getX2()]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getX1" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getX2" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="min" Arguments="[getY1(), getY2()]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getY1" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getY2" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="abs" Arguments="[getX1() - getX2()]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getX1" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getX2" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="abs" Arguments="[getY1() - getY2()]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getY1" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getY2" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="setColor" Arguments="[getColor()]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getColor" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="fillOval" Arguments="[upperLeftX, upperLeftY, width, height]" InvokedBy="draw" />
+              </MethodInvocations>
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+          </Methods>
+        </Class>
+        <Class ClassName="MyLine" classAccessLevel="public" isInterface="false" Superclass="MyShape" DeclaredPackage="Drawing.Shapes.coreElements">
+          <SuperInterfaces />
+          <Comments>
+            <Comment CommentText="by Ra fat AL msie deen  2016" />
+            <Comment CommentText="Class that declares a line object" />
+            <Comment CommentText="constructor" />
+            <Comment CommentText="end constructor" />
+            <Comment CommentText="draw a line" />
+            <Comment CommentText="end method draw" />
+            <Comment CommentText="end class MyLine" />
+          </Comments>
+          <Attributes />
+          <Methods>
+            <Method MethodName="MyLine" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyLine">
+              <Parameters NumberOfParameters="5">
+                <Parameter ParameterName="firstX" ParameterType="int" />
+                <Parameter ParameterName="firstY" ParameterType="int" />
+                <Parameter ParameterName="secondX" ParameterType="int" />
+                <Parameter ParameterName="secondY" ParameterType="int" />
+                <Parameter ParameterName="shapeColor" ParameterType="Color" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="firstX" AttributeAccessType="int" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyLine" />
+                <AttributeAccess AttributeAccessName="firstY" AttributeAccessType="int" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyLine" />
+                <AttributeAccess AttributeAccessName="secondX" AttributeAccessType="int" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyLine" />
+                <AttributeAccess AttributeAccessName="secondY" AttributeAccessType="int" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyLine" />
+                <AttributeAccess AttributeAccessName="shapeColor" AttributeAccessType="Color" HowIsItUsed="super(firstX,firstY,secondX,secondY,shapeColor);&#xA;" AccessedIn="MyLine" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="draw" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyLine">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="g" ParameterType="Graphics" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="g" AttributeAccessType="Graphics" HowIsItUsed="g.setColor(getColor())" AccessedIn="draw" />
+                <AttributeAccess AttributeAccessName="g" AttributeAccessType="Graphics" HowIsItUsed="g.drawLine(getX1(),getY1(),getX2(),getY2())" AccessedIn="draw" />
+              </AttributeAccesses>
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="setColor" Arguments="[getColor()]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getColor" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="drawLine" Arguments="[getX1(), getY1(), getX2(), getY2()]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getX1" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getY1" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getX2" Arguments="[]" InvokedBy="draw" />
+                <MethodInvocation MethodInvocationName="getY2" Arguments="[]" InvokedBy="draw" />
+              </MethodInvocations>
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Package>
+    <Package PackageName="Drawing.Shapes.coreFrame">
+      <Classes>
+        <Class ClassName="PaintJPanel" classAccessLevel="public" isInterface="false" Superclass="JPanel" DeclaredPackage="Drawing.Shapes.coreFrame">
+          <SuperInterfaces />
+          <Comments>
+            <Comment CommentText="Panel allows user to create a shape" />
+            <Comment CommentText="" />
+            <Comment CommentText="ArrayList to hold the shapes" />
+            <Comment CommentText="current shape that is being drawn" />
+            <Comment CommentText="currently selected shape type" />
+            <Comment CommentText="currently selected color" />
+            <Comment CommentText="no argument constructor" />
+            <Comment CommentText="MouseEvent event" />
+            <Comment CommentText="anonymous inner class" />
+            <Comment CommentText="event handler called when mouse button is pressed" />
+            <Comment CommentText="end anonymous inner class" />
+            <Comment CommentText="end call to addMouseListener" />
+            <Comment CommentText="anonymous inner class" />
+            <Comment CommentText="event handler called when the mouse is dragged" />
+            <Comment CommentText="end anonymous inner class" />
+            <Comment CommentText="end call to addMouseMotionListener" />
+            <Comment CommentText="end constructor" />
+            <Comment CommentText="change the current shape type" />
+            <Comment CommentText="end method setCurrentShapeType" />
+            <Comment CommentText="change the current color" />
+            <Comment CommentText="end method setCurrentColor" />
+            <Comment CommentText="create a new shape" />
+            <Comment CommentText="user selected line" />
+            <Comment CommentText="user selected rectangle" />
+            <Comment CommentText="user selected oval" />
+            <Comment CommentText="end method paintJPanelMousePressed" />
+            <Comment CommentText="reset the second point for the shape" />
+            <Comment CommentText="end method paintJPanelMouseDragged" />
+            <Comment CommentText="paint all the shapes" />
+            <Comment CommentText="iterate through all the shapes" />
+            <Comment CommentText="draw each shape" />
+            <Comment CommentText="end method paintComponent" />
+            <Comment CommentText="end class PaintJPanel" />
+          </Comments>
+          <Attributes>
+            <Attribute AttributeName="serialVersionUID" AttributeAccessLevel="private" AttributeType="long" isStaticAttribute="true" />
+            <Attribute AttributeName="shapesArrayList" AttributeAccessLevel="private" AttributeType="ArrayList" isStaticAttribute="false" />
+            <Attribute AttributeName="currentShape" AttributeAccessLevel="private" AttributeType="MyShape" isStaticAttribute="false" />
+            <Attribute AttributeName="currentType" AttributeAccessLevel="private" AttributeType="String" isStaticAttribute="false" />
+            <Attribute AttributeName="currentColor" AttributeAccessLevel="private" AttributeType="Color" isStaticAttribute="false" />
+          </Attributes>
+          <Methods>
+            <Method MethodName="PaintJPanel" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="PaintJPanel">
+              <Parameters NumberOfParameters="0" />
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="paintJPanelMousePressed(event)" AccessedIn="PaintJPanel" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="paintJPanelMouseDragged(event)" AccessedIn="PaintJPanel" />
+              </AttributeAccesses>
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="addMouseListener" Arguments="[new MouseAdapter(){&#xA;  public void mousePressed(  MouseEvent event){&#xA;    paintJPanelMousePressed(event);&#xA;  }&#xA;}&#xA;]" InvokedBy="PaintJPanel" />
+                <MethodInvocation MethodInvocationName="paintJPanelMousePressed" Arguments="[event]" InvokedBy="PaintJPanel" />
+                <MethodInvocation MethodInvocationName="addMouseMotionListener" Arguments="[new MouseMotionAdapter(){&#xA;  public void mouseDragged(  MouseEvent event){&#xA;    paintJPanelMouseDragged(event);&#xA;  }&#xA;}&#xA;]" InvokedBy="PaintJPanel" />
+                <MethodInvocation MethodInvocationName="paintJPanelMouseDragged" Arguments="[event]" InvokedBy="PaintJPanel" />
+              </MethodInvocations>
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="setCurrentShapeType" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="PaintJPanel">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="shape" ParameterType="String" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="currentType" AttributeAccessType="String" HowIsItUsed="currentType=shape" AccessedIn="setCurrentShapeType" />
+                <AttributeAccess AttributeAccessName="shape" AttributeAccessType="String" HowIsItUsed="currentType=shape" AccessedIn="setCurrentShapeType" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments>
+                <Assignment LeftHandSide="currentType" RightHandSide="shape" />
+              </MethodAssignments>
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="setCurrentColor" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="PaintJPanel">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="shapeColor" ParameterType="Color" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="currentColor" AttributeAccessType="Color" HowIsItUsed="currentColor=shapeColor" AccessedIn="setCurrentColor" />
+                <AttributeAccess AttributeAccessName="shapeColor" AttributeAccessType="Color" HowIsItUsed="currentColor=shapeColor" AccessedIn="setCurrentColor" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments>
+                <Assignment LeftHandSide="currentColor" RightHandSide="shapeColor" />
+              </MethodAssignments>
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="paintJPanelMousePressed" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="PaintJPanel">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="event" ParameterType="MouseEvent" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="currentType" AttributeAccessType="String" HowIsItUsed="currentType.equals(&quot;Line&quot;)" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="currentShape" AttributeAccessType="MyShape" HowIsItUsed="currentShape=new MyLine(event.getX(),event.getY(),event.getX(),event.getY(),currentColor)" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getX()" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getY()" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getX()" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getY()" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="currentColor" AttributeAccessType="Color" HowIsItUsed="new MyLine(event.getX(),event.getY(),event.getX(),event.getY(),currentColor)" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="currentType" AttributeAccessType="String" HowIsItUsed="currentType.equals(&quot;Rectangle&quot;)" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="currentShape" AttributeAccessType="MyShape" HowIsItUsed="currentShape=new MyRectangle(event.getX(),event.getY(),event.getX(),event.getY(),currentColor)" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getX()" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getY()" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getX()" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getY()" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="currentColor" AttributeAccessType="Color" HowIsItUsed="new MyRectangle(event.getX(),event.getY(),event.getX(),event.getY(),currentColor)" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="currentType" AttributeAccessType="String" HowIsItUsed="currentType.equals(&quot;Oval&quot;)" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="currentShape" AttributeAccessType="MyShape" HowIsItUsed="currentShape=new MyOval(event.getX(),event.getY(),event.getX(),event.getY(),currentColor)" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getX()" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getY()" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getX()" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getY()" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="currentColor" AttributeAccessType="Color" HowIsItUsed="new MyOval(event.getX(),event.getY(),event.getX(),event.getY(),currentColor)" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="shapesArrayList" AttributeAccessType="ArrayList" HowIsItUsed="shapesArrayList.add(currentShape)" AccessedIn="paintJPanelMousePressed" />
+                <AttributeAccess AttributeAccessName="currentShape" AttributeAccessType="MyShape" HowIsItUsed="shapesArrayList.add(currentShape)" AccessedIn="paintJPanelMousePressed" />
+              </AttributeAccesses>
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="equals" Arguments="[&quot;Line&quot;]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="getX" Arguments="[]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="getY" Arguments="[]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="getX" Arguments="[]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="getY" Arguments="[]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="equals" Arguments="[&quot;Rectangle&quot;]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="getX" Arguments="[]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="getY" Arguments="[]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="getX" Arguments="[]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="getY" Arguments="[]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="equals" Arguments="[&quot;Oval&quot;]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="getX" Arguments="[]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="getY" Arguments="[]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="getX" Arguments="[]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="getY" Arguments="[]" InvokedBy="paintJPanelMousePressed" />
+                <MethodInvocation MethodInvocationName="add" Arguments="[currentShape]" InvokedBy="paintJPanelMousePressed" />
+              </MethodInvocations>
+              <MethodAssignments>
+                <Assignment LeftHandSide="currentShape" RightHandSide="new MyLine(event.getX(),event.getY(),event.getX(),event.getY(),currentColor)" />
+                <Assignment LeftHandSide="currentShape" RightHandSide="new MyRectangle(event.getX(),event.getY(),event.getX(),event.getY(),currentColor)" />
+                <Assignment LeftHandSide="currentShape" RightHandSide="new MyOval(event.getX(),event.getY(),event.getX(),event.getY(),currentColor)" />
+              </MethodAssignments>
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="paintJPanelMouseDragged" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="PaintJPanel">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="event" ParameterType="MouseEvent" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="currentShape" AttributeAccessType="MyShape" HowIsItUsed="currentShape.setX2(event.getX())" AccessedIn="paintJPanelMouseDragged" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getX()" AccessedIn="paintJPanelMouseDragged" />
+                <AttributeAccess AttributeAccessName="currentShape" AttributeAccessType="MyShape" HowIsItUsed="currentShape.setY2(event.getY())" AccessedIn="paintJPanelMouseDragged" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="MouseEvent" HowIsItUsed="event.getY()" AccessedIn="paintJPanelMouseDragged" />
+              </AttributeAccesses>
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="setX2" Arguments="[event.getX()]" InvokedBy="paintJPanelMouseDragged" />
+                <MethodInvocation MethodInvocationName="getX" Arguments="[]" InvokedBy="paintJPanelMouseDragged" />
+                <MethodInvocation MethodInvocationName="setY2" Arguments="[event.getY()]" InvokedBy="paintJPanelMouseDragged" />
+                <MethodInvocation MethodInvocationName="getY" Arguments="[]" InvokedBy="paintJPanelMouseDragged" />
+                <MethodInvocation MethodInvocationName="repaint" Arguments="[]" InvokedBy="paintJPanelMouseDragged" />
+              </MethodInvocations>
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="paintComponent" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="PaintJPanel">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="g" ParameterType="Graphics" />
+              </Parameters>
+              <LocalVariables>
+                <LocalVariable LocalVariableName="nextShape" LocalVariableType="MyShape" />
+                <LocalVariable LocalVariableName="shapesIterator" LocalVariableType="Iterator" />
+              </LocalVariables>
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="g" AttributeAccessType="Graphics" HowIsItUsed="super.paintComponent(g)" AccessedIn="paintComponent" />
+                <AttributeAccess AttributeAccessName="shapesArrayList" AttributeAccessType="ArrayList" HowIsItUsed="shapesArrayList.iterator()" AccessedIn="paintComponent" />
+                <AttributeAccess AttributeAccessName="shapesIterator" AttributeAccessType="Iterator" HowIsItUsed="shapesIterator.hasNext()" AccessedIn="paintComponent" />
+                <AttributeAccess AttributeAccessName="nextShape" AttributeAccessType="MyShape" HowIsItUsed="nextShape=(MyShape)shapesIterator.next()" AccessedIn="paintComponent" />
+                <AttributeAccess AttributeAccessName="shapesIterator" AttributeAccessType="Iterator" HowIsItUsed="shapesIterator.next()" AccessedIn="paintComponent" />
+                <AttributeAccess AttributeAccessName="nextShape" AttributeAccessType="MyShape" HowIsItUsed="nextShape.draw(g)" AccessedIn="paintComponent" />
+                <AttributeAccess AttributeAccessName="g" AttributeAccessType="Graphics" HowIsItUsed="nextShape.draw(g)" AccessedIn="paintComponent" />
+              </AttributeAccesses>
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="iterator" Arguments="[]" InvokedBy="paintComponent" />
+                <MethodInvocation MethodInvocationName="hasNext" Arguments="[]" InvokedBy="paintComponent" />
+                <MethodInvocation MethodInvocationName="next" Arguments="[]" InvokedBy="paintComponent" />
+                <MethodInvocation MethodInvocationName="draw" Arguments="[g]" InvokedBy="paintComponent" />
+              </MethodInvocations>
+              <MethodAssignments>
+                <Assignment LeftHandSide="nextShape" RightHandSide="(MyShape)shapesIterator.next()" />
+              </MethodAssignments>
+              <MethodExceptions />
+            </Method>
+          </Methods>
+        </Class>
+        <Class ClassName="DrawingShapes" classAccessLevel="public" isInterface="false" Superclass="JFrame" DeclaredPackage="Drawing.Shapes.coreFrame">
+          <SuperInterfaces />
+          <Comments>
+            <Comment CommentText="Application allows user to draw lines  rectangles and ovals and choose the color of the drawn shape" />
+            <Comment CommentText="JPanel for the shape and color controls" />
+            <Comment CommentText="JComboBox to allow selection of a shape" />
+            <Comment CommentText="JButton to select the color" />
+            <Comment CommentText="PaintJPanel for drawing shapes" />
+            <Comment CommentText="array of shape types" />
+            <Comment CommentText="no argument constructor" />
+            <Comment CommentText="create and position GUI components  register event handlers" />
+            <Comment CommentText="get content pane for attaching GUI components" />
+            <Comment CommentText="enable explicit positioning of GUI components" />
+            <Comment CommentText="set up controlsJPanel" />
+            <Comment CommentText="set up painterPaintJPanel" />
+            <Comment CommentText="set up shapeJComboBox" />
+            <Comment CommentText="anonymous inner class" />
+            <Comment CommentText="event method called when shapeJComboBox is selected" />
+            <Comment CommentText="end anonymous inner class" />
+            <Comment CommentText="end call to addActionListener" />
+            <Comment CommentText="set up colorJButton" />
+            <Comment CommentText="anonymous inner class" />
+            <Comment CommentText="event handler called when colorJButton is pressed" />
+            <Comment CommentText="end anonymous inner class" />
+            <Comment CommentText="end call to addActionListener" />
+            <Comment CommentText="set properties of application s window" />
+            <Comment CommentText="set title bar string" />
+            <Comment CommentText="set window size" />
+            <Comment CommentText="display window" />
+            <Comment CommentText="end method createUserInterface" />
+            <Comment CommentText="select a new color for the shape" />
+            <Comment CommentText="end method colorJButtonActionPerformed" />
+            <Comment CommentText="set the selected shape in the painting panel" />
+            <Comment CommentText="end method shapeJComboBoxActionPerformed" />
+            <Comment CommentText="main method" />
+            <Comment CommentText="end method main" />
+            <Comment CommentText="end class DrawingShapes" />
+          </Comments>
+          <Attributes>
+            <Attribute AttributeName="serialVersionUID" AttributeAccessLevel="private" AttributeType="long" isStaticAttribute="true" />
+            <Attribute AttributeName="controlsJPanel" AttributeAccessLevel="private" AttributeType="JPanel" isStaticAttribute="false" />
+            <Attribute AttributeName="shapeJComboBox" AttributeAccessLevel="private" AttributeType="JComboBox" isStaticAttribute="false" />
+            <Attribute AttributeName="colorJButton" AttributeAccessLevel="private" AttributeType="JButton" isStaticAttribute="false" />
+            <Attribute AttributeName="painterPaintJPanel" AttributeAccessLevel="private" AttributeType="PaintJPanel" isStaticAttribute="false" />
+            <Attribute AttributeName="shapeTypes" AttributeAccessLevel="private" AttributeType="String[]" isStaticAttribute="false" />
+          </Attributes>
+          <Methods>
+            <Method MethodName="DrawingShapes" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="DrawingShapes">
+              <Parameters NumberOfParameters="0" />
+              <LocalVariables />
+              <AttributeAccesses />
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="createUserInterface" Arguments="[]" InvokedBy="DrawingShapes" />
+              </MethodInvocations>
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="createUserInterface" MethodAccessLevel="private" MethodReturnType="void" isStaticMethod="false" DeclaredClass="DrawingShapes">
+              <Parameters NumberOfParameters="0" />
+              <LocalVariables>
+                <LocalVariable LocalVariableName="contentPane" LocalVariableType="Container" />
+              </LocalVariables>
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="contentPane" AttributeAccessType="Container" HowIsItUsed="contentPane.setLayout(null)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="controlsJPanel" AttributeAccessType="JPanel" HowIsItUsed="controlsJPanel=new JPanel()" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="controlsJPanel" AttributeAccessType="JPanel" HowIsItUsed="controlsJPanel.setBounds(0,0,400,40)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="controlsJPanel" AttributeAccessType="JPanel" HowIsItUsed="controlsJPanel.setLayout(null)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="contentPane" AttributeAccessType="Container" HowIsItUsed="contentPane.add(controlsJPanel)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="controlsJPanel" AttributeAccessType="JPanel" HowIsItUsed="contentPane.add(controlsJPanel)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="painterPaintJPanel" AttributeAccessType="PaintJPanel" HowIsItUsed="painterPaintJPanel=new PaintJPanel()" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="painterPaintJPanel" AttributeAccessType="PaintJPanel" HowIsItUsed="painterPaintJPanel.setBounds(0,40,400,340)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="painterPaintJPanel" AttributeAccessType="PaintJPanel" HowIsItUsed="painterPaintJPanel.setBackground(Color.WHITE)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="WHITE" AttributeAccessType="Color" HowIsItUsed="Color.WHITE" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="contentPane" AttributeAccessType="Container" HowIsItUsed="contentPane.add(painterPaintJPanel)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="painterPaintJPanel" AttributeAccessType="PaintJPanel" HowIsItUsed="contentPane.add(painterPaintJPanel)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="shapeJComboBox" AttributeAccessType="JComboBox" HowIsItUsed="shapeJComboBox=new JComboBox(shapeTypes)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="shapeTypes" AttributeAccessType="String[]" HowIsItUsed="new JComboBox(shapeTypes)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="shapeJComboBox" AttributeAccessType="JComboBox" HowIsItUsed="shapeJComboBox.setBounds(90,2,100,24)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="controlsJPanel" AttributeAccessType="JPanel" HowIsItUsed="controlsJPanel.add(shapeJComboBox)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="shapeJComboBox" AttributeAccessType="JComboBox" HowIsItUsed="controlsJPanel.add(shapeJComboBox)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="shapeJComboBox" AttributeAccessType="JComboBox" HowIsItUsed="shapeJComboBox.addActionListener(new ActionListener(){&#xA;  public void actionPerformed(  ActionEvent event){&#xA;    shapeJComboBoxActionPerformed(event);&#xA;  }&#xA;}&#xA;)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="ActionEvent" HowIsItUsed="shapeJComboBoxActionPerformed(event)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="colorJButton" AttributeAccessType="JButton" HowIsItUsed="colorJButton=new JButton()" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="colorJButton" AttributeAccessType="JButton" HowIsItUsed="colorJButton.setBounds(210,2,80,24)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="colorJButton" AttributeAccessType="JButton" HowIsItUsed="colorJButton.setText(&quot;Color&quot;)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="controlsJPanel" AttributeAccessType="JPanel" HowIsItUsed="controlsJPanel.add(colorJButton)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="colorJButton" AttributeAccessType="JButton" HowIsItUsed="controlsJPanel.add(colorJButton)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="colorJButton" AttributeAccessType="JButton" HowIsItUsed="colorJButton.addActionListener(new ActionListener(){&#xA;  public void actionPerformed(  ActionEvent event){&#xA;    colorJButtonActionPerformed(event);&#xA;  }&#xA;}&#xA;)" AccessedIn="createUserInterface" />
+                <AttributeAccess AttributeAccessName="event" AttributeAccessType="ActionEvent" HowIsItUsed="colorJButtonActionPerformed(event)" AccessedIn="createUserInterface" />
+              </AttributeAccesses>
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="getContentPane" Arguments="[]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="setLayout" Arguments="[null]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="setBounds" Arguments="[0, 0, 400, 40]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="setLayout" Arguments="[null]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="add" Arguments="[controlsJPanel]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="setBounds" Arguments="[0, 40, 400, 340]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="setBackground" Arguments="[Color.WHITE]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="add" Arguments="[painterPaintJPanel]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="setBounds" Arguments="[90, 2, 100, 24]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="add" Arguments="[shapeJComboBox]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="addActionListener" Arguments="[new ActionListener(){&#xA;  public void actionPerformed(  ActionEvent event){&#xA;    shapeJComboBoxActionPerformed(event);&#xA;  }&#xA;}&#xA;]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="shapeJComboBoxActionPerformed" Arguments="[event]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="setBounds" Arguments="[210, 2, 80, 24]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="setText" Arguments="[&quot;Color&quot;]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="add" Arguments="[colorJButton]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="addActionListener" Arguments="[new ActionListener(){&#xA;  public void actionPerformed(  ActionEvent event){&#xA;    colorJButtonActionPerformed(event);&#xA;  }&#xA;}&#xA;]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="colorJButtonActionPerformed" Arguments="[event]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="setTitle" Arguments="[&quot;Drawing shapes software&quot;]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="setSize" Arguments="[408, 407]" InvokedBy="createUserInterface" />
+                <MethodInvocation MethodInvocationName="setVisible" Arguments="[true]" InvokedBy="createUserInterface" />
+              </MethodInvocations>
+              <MethodAssignments>
+                <Assignment LeftHandSide="controlsJPanel" RightHandSide="new JPanel()" />
+                <Assignment LeftHandSide="painterPaintJPanel" RightHandSide="new PaintJPanel()" />
+                <Assignment LeftHandSide="shapeJComboBox" RightHandSide="new JComboBox(shapeTypes)" />
+                <Assignment LeftHandSide="colorJButton" RightHandSide="new JButton()" />
+              </MethodAssignments>
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="colorJButtonActionPerformed" MethodAccessLevel="private" MethodReturnType="void" isStaticMethod="false" DeclaredClass="DrawingShapes">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="event" ParameterType="ActionEvent" />
+              </Parameters>
+              <LocalVariables>
+                <LocalVariable LocalVariableName="selection" LocalVariableType="Color" />
+              </LocalVariables>
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="BLACK" AttributeAccessType="Color" HowIsItUsed="Color.BLACK" AccessedIn="colorJButtonActionPerformed" />
+                <AttributeAccess AttributeAccessName="selection" AttributeAccessType="Color" HowIsItUsed="selection != null" AccessedIn="colorJButtonActionPerformed" />
+                <AttributeAccess AttributeAccessName="colorJButton" AttributeAccessType="JButton" HowIsItUsed="colorJButton.setBackground(selection)" AccessedIn="colorJButtonActionPerformed" />
+                <AttributeAccess AttributeAccessName="selection" AttributeAccessType="Color" HowIsItUsed="colorJButton.setBackground(selection)" AccessedIn="colorJButtonActionPerformed" />
+                <AttributeAccess AttributeAccessName="painterPaintJPanel" AttributeAccessType="PaintJPanel" HowIsItUsed="painterPaintJPanel.setCurrentColor(selection)" AccessedIn="colorJButtonActionPerformed" />
+                <AttributeAccess AttributeAccessName="selection" AttributeAccessType="Color" HowIsItUsed="painterPaintJPanel.setCurrentColor(selection)" AccessedIn="colorJButtonActionPerformed" />
+              </AttributeAccesses>
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="showDialog" Arguments="[null, &quot;Select a Color&quot;, Color.BLACK]" InvokedBy="colorJButtonActionPerformed" />
+                <MethodInvocation MethodInvocationName="setBackground" Arguments="[selection]" InvokedBy="colorJButtonActionPerformed" />
+                <MethodInvocation MethodInvocationName="setCurrentColor" Arguments="[selection]" InvokedBy="colorJButtonActionPerformed" />
+              </MethodInvocations>
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="shapeJComboBoxActionPerformed" MethodAccessLevel="private" MethodReturnType="void" isStaticMethod="false" DeclaredClass="DrawingShapes">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="event" ParameterType="ActionEvent" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="painterPaintJPanel" AttributeAccessType="PaintJPanel" HowIsItUsed="painterPaintJPanel.setCurrentShapeType(shapeJComboBox.getSelectedItem().toString())" AccessedIn="shapeJComboBoxActionPerformed" />
+                <AttributeAccess AttributeAccessName="shapeJComboBox" AttributeAccessType="JComboBox" HowIsItUsed="shapeJComboBox.getSelectedItem()" AccessedIn="shapeJComboBoxActionPerformed" />
+              </AttributeAccesses>
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="setCurrentShapeType" Arguments="[shapeJComboBox.getSelectedItem().toString()]" InvokedBy="shapeJComboBoxActionPerformed" />
+                <MethodInvocation MethodInvocationName="toString" Arguments="[]" InvokedBy="shapeJComboBoxActionPerformed" />
+                <MethodInvocation MethodInvocationName="getSelectedItem" Arguments="[]" InvokedBy="shapeJComboBoxActionPerformed" />
+              </MethodInvocations>
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="main" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="true" DeclaredClass="DrawingShapes">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="args" ParameterType="String[]" />
+              </Parameters>
+              <LocalVariables>
+                <LocalVariable LocalVariableName="application" LocalVariableType="DrawingShapes" />
+              </LocalVariables>
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="application" AttributeAccessType="DrawingShapes" HowIsItUsed="application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)" AccessedIn="main" />
+                <AttributeAccess AttributeAccessName="EXIT_ON_CLOSE" AttributeAccessType="int" HowIsItUsed="JFrame.EXIT_ON_CLOSE" AccessedIn="main" />
+              </AttributeAccesses>
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="setDefaultCloseOperation" Arguments="[JFrame.EXIT_ON_CLOSE]" InvokedBy="main" />
+              </MethodInvocations>
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+          </Methods>
+        </Class>
+        <Class ClassName="MyShape" classAccessLevel="public" isInterface="false" Superclass="Object" DeclaredPackage="Drawing.Shapes.coreFrame">
+          <SuperInterfaces />
+          <Comments>
+            <Comment CommentText="Superclass for all shape objects" />
+            <Comment CommentText="constructor" />
+            <Comment CommentText="end constructor" />
+            <Comment CommentText="set x1 value" />
+            <Comment CommentText="end method setX1" />
+            <Comment CommentText="get x1 value" />
+            <Comment CommentText="end method getX1" />
+            <Comment CommentText="set Y1 value" />
+            <Comment CommentText="end method setY1" />
+            <Comment CommentText="get Y1 value" />
+            <Comment CommentText="end method getY1" />
+            <Comment CommentText="set x2 value" />
+            <Comment CommentText="end method setX2" />
+            <Comment CommentText="get x2 value" />
+            <Comment CommentText="end method getX2" />
+            <Comment CommentText="set y2 value" />
+            <Comment CommentText="end method setY2" />
+            <Comment CommentText="get y2 value" />
+            <Comment CommentText="end method getY2" />
+            <Comment CommentText="set color value" />
+            <Comment CommentText="end method setColor" />
+            <Comment CommentText="get color value" />
+            <Comment CommentText="end method getColor" />
+            <Comment CommentText="empty draw method" />
+            <Comment CommentText="end class MyShape" />
+          </Comments>
+          <Attributes>
+            <Attribute AttributeName="x1" AttributeAccessLevel="private" AttributeType="int" isStaticAttribute="false" />
+            <Attribute AttributeName="y1" AttributeAccessLevel="private" AttributeType="int" isStaticAttribute="false" />
+            <Attribute AttributeName="x2" AttributeAccessLevel="private" AttributeType="int" isStaticAttribute="false" />
+            <Attribute AttributeName="y2" AttributeAccessLevel="private" AttributeType="int" isStaticAttribute="false" />
+            <Attribute AttributeName="color" AttributeAccessLevel="private" AttributeType="Color" isStaticAttribute="false" />
+          </Attributes>
+          <Methods>
+            <Method MethodName="MyShape" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyShape">
+              <Parameters NumberOfParameters="5">
+                <Parameter ParameterName="firstX" ParameterType="int" />
+                <Parameter ParameterName="firstY" ParameterType="int" />
+                <Parameter ParameterName="secondX" ParameterType="int" />
+                <Parameter ParameterName="secondY" ParameterType="int" />
+                <Parameter ParameterName="shapeColor" ParameterType="Color" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="firstX" AttributeAccessType="int" HowIsItUsed="setX1(firstX)" AccessedIn="MyShape" />
+                <AttributeAccess AttributeAccessName="firstY" AttributeAccessType="int" HowIsItUsed="setY1(firstY)" AccessedIn="MyShape" />
+                <AttributeAccess AttributeAccessName="secondX" AttributeAccessType="int" HowIsItUsed="setX2(secondX)" AccessedIn="MyShape" />
+                <AttributeAccess AttributeAccessName="secondY" AttributeAccessType="int" HowIsItUsed="setY2(secondY)" AccessedIn="MyShape" />
+                <AttributeAccess AttributeAccessName="shapeColor" AttributeAccessType="Color" HowIsItUsed="setColor(shapeColor)" AccessedIn="MyShape" />
+              </AttributeAccesses>
+              <MethodInvocations>
+                <MethodInvocation MethodInvocationName="setX1" Arguments="[firstX]" InvokedBy="MyShape" />
+                <MethodInvocation MethodInvocationName="setY1" Arguments="[firstY]" InvokedBy="MyShape" />
+                <MethodInvocation MethodInvocationName="setX2" Arguments="[secondX]" InvokedBy="MyShape" />
+                <MethodInvocation MethodInvocationName="setY2" Arguments="[secondY]" InvokedBy="MyShape" />
+                <MethodInvocation MethodInvocationName="setColor" Arguments="[shapeColor]" InvokedBy="MyShape" />
+              </MethodInvocations>
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="setX1" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyShape">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="x" ParameterType="int" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="x1" AttributeAccessType="int" HowIsItUsed="x1=x" AccessedIn="setX1" />
+                <AttributeAccess AttributeAccessName="x" AttributeAccessType="int" HowIsItUsed="x1=x" AccessedIn="setX1" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments>
+                <Assignment LeftHandSide="x1" RightHandSide="x" />
+              </MethodAssignments>
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="getX1" MethodAccessLevel="public" MethodReturnType="int" isStaticMethod="false" DeclaredClass="MyShape">
+              <Parameters NumberOfParameters="0" />
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="x1" AttributeAccessType="int" HowIsItUsed="return x1;&#xA;" AccessedIn="getX1" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="setY1" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyShape">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="y" ParameterType="int" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="y1" AttributeAccessType="int" HowIsItUsed="y1=y" AccessedIn="setY1" />
+                <AttributeAccess AttributeAccessName="y" AttributeAccessType="int" HowIsItUsed="y1=y" AccessedIn="setY1" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments>
+                <Assignment LeftHandSide="y1" RightHandSide="y" />
+              </MethodAssignments>
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="getY1" MethodAccessLevel="public" MethodReturnType="int" isStaticMethod="false" DeclaredClass="MyShape">
+              <Parameters NumberOfParameters="0" />
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="y1" AttributeAccessType="int" HowIsItUsed="return y1;&#xA;" AccessedIn="getY1" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="setX2" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyShape">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="x" ParameterType="int" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="x2" AttributeAccessType="int" HowIsItUsed="x2=x" AccessedIn="setX2" />
+                <AttributeAccess AttributeAccessName="x" AttributeAccessType="int" HowIsItUsed="x2=x" AccessedIn="setX2" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments>
+                <Assignment LeftHandSide="x2" RightHandSide="x" />
+              </MethodAssignments>
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="getX2" MethodAccessLevel="public" MethodReturnType="int" isStaticMethod="false" DeclaredClass="MyShape">
+              <Parameters NumberOfParameters="0" />
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="x2" AttributeAccessType="int" HowIsItUsed="return x2;&#xA;" AccessedIn="getX2" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="setY2" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyShape">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="y" ParameterType="int" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="y2" AttributeAccessType="int" HowIsItUsed="y2=y" AccessedIn="setY2" />
+                <AttributeAccess AttributeAccessName="y" AttributeAccessType="int" HowIsItUsed="y2=y" AccessedIn="setY2" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments>
+                <Assignment LeftHandSide="y2" RightHandSide="y" />
+              </MethodAssignments>
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="getY2" MethodAccessLevel="public" MethodReturnType="int" isStaticMethod="false" DeclaredClass="MyShape">
+              <Parameters NumberOfParameters="0" />
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="y2" AttributeAccessType="int" HowIsItUsed="return y2;&#xA;" AccessedIn="getY2" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="setColor" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyShape">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="c" ParameterType="Color" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="color" AttributeAccessType="Color" HowIsItUsed="color=c" AccessedIn="setColor" />
+                <AttributeAccess AttributeAccessName="c" AttributeAccessType="Color" HowIsItUsed="color=c" AccessedIn="setColor" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments>
+                <Assignment LeftHandSide="color" RightHandSide="c" />
+              </MethodAssignments>
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="getColor" MethodAccessLevel="public" MethodReturnType="Color" isStaticMethod="false" DeclaredClass="MyShape">
+              <Parameters NumberOfParameters="0" />
+              <LocalVariables />
+              <AttributeAccesses>
+                <AttributeAccess AttributeAccessName="color" AttributeAccessType="Color" HowIsItUsed="return color;&#xA;" AccessedIn="getColor" />
+              </AttributeAccesses>
+              <MethodInvocations />
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+            <Method MethodName="draw" MethodAccessLevel="public" MethodReturnType="void" isStaticMethod="false" DeclaredClass="MyShape">
+              <Parameters NumberOfParameters="1">
+                <Parameter ParameterName="g" ParameterType="Graphics" />
+              </Parameters>
+              <LocalVariables />
+              <AttributeAccesses />
+              <MethodInvocations />
+              <MethodAssignments />
+              <MethodExceptions />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Package>
+  </Packages>
+</Project>
