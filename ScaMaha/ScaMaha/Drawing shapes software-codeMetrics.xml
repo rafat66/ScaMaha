@@ -1,0 +1,14 @@
+<Project ProjectName="Drawing shapes software">
+  <Metrics>
+    <LinesOfCode LOC="213" />
+    <NumberOfPackages NOP="4" />
+    <NumberOfClasses NOC="6" />
+    <NumberOfAttributes NOA="16" />
+    <NumberOfMethods NOM="29" />
+    <NumberOfComments NOCo="112" />
+    <NumberOfLocalVariables NOLv="13" />
+    <NumberOfInheritances NOIn="6" />
+    <NumberOfInvocations NOI="99" />
+    <NumberOfAccesses NOAc="125" />
+  </Metrics>
+</Project>

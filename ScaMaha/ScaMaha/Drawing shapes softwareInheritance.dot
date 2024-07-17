@@ -1,0 +1,60 @@
+digraph G {
+graph [fontsize=10 fontname="Verdana" compound=true];
+node [shape=record fontsize=10 fontname="Verdana"];
+subgraph cluster_Drawing_shapes_software{
+label =Drawing_shapes_software;
+style=filled;
+fillcolor=azure2;
+subgraph cluster_Drawing{
+label =Drawing;
+style=filled;
+fillcolor=bisque1;
+-717304834[shape=point, color=bisque1];
+}
+subgraph cluster_Drawing_Shapes{
+label =Drawing_Shapes;
+style=filled;
+fillcolor=bisque1;
+501846274[shape=point, color=bisque1];
+}
+subgraph cluster_Drawing_Shapes_coreElements{
+label =Drawing_Shapes_coreElements;
+style=filled;
+fillcolor=bisque1;
+-104331005[shape=note,style=filled,fillcolor=white,label="MyRectangle\n"];
+style=filled;
+fillcolor=bisque1;
+-1976306626[shape=note,style=filled,fillcolor=white,label="MyOval\n"];
+style=filled;
+fillcolor=bisque1;
+-1976408096[shape=note,style=filled,fillcolor=white,label="MyLine\n"];
+style=filled;
+fillcolor=bisque1;
+}
+subgraph cluster_Drawing_Shapes_coreFrame{
+label =Drawing_Shapes_coreFrame;
+style=filled;
+fillcolor=bisque1;
+88938904[shape=note,style=filled,fillcolor=white,label="PaintJPanel\n"];
+style=filled;
+fillcolor=bisque1;
+263382672[shape=note,style=filled,fillcolor=white,label="DrawingShapes\n"];
+style=filled;
+fillcolor=bisque1;
+-1132686027[shape=note,style=filled,fillcolor=white,label="MyShape\n"];
+style=filled;
+fillcolor=bisque1;
+}
+-1132686027[shape=note,style=filled,fillcolor=white,label="MyShape\n"];
+-104331005->-1132686027[color="red;0.50:blue"];
+-1132686027[shape=note,style=filled,fillcolor=white,label="MyShape\n"];
+-1976306626->-1132686027[color="red;0.50:blue"];
+-1132686027[shape=note,style=filled,fillcolor=white,label="MyShape\n"];
+-1976408096->-1132686027[color="red;0.50:blue"];
+-2099529766[shape=note,style=filled,fillcolor=white,label="JPanel\n"];
+88938904->-2099529766[color="red;0.50:blue"];
+-2108270781[shape=note,style=filled,fillcolor=white,label="JFrame\n"];
+263382672->-2108270781[color="red;0.50:blue"];
+}
+}
+}
