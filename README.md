@@ -29,5 +29,7 @@ ScaMaha presentation: http://dx.doi.org/10.13140/RG.2.2.15401.92004
 
 # ScaMaha: A Tool for Parsing, Analyzing, and Visualizing OO Software Systems. 
 
+![image](https://github.com/user-attachments/assets/466fda83-bb0a-4d1b-9285-379a1f1932b9)
+
 © 2024 Ra'fat Al-Msie'deen
 
