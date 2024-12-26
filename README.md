@@ -23,6 +23,6 @@ ScaMaha presentation: http://dx.doi.org/10.13140/RG.2.2.15401.92004
 
 
 
-Copyright
-© 2024 Ra'fat Al-Msie'deen. All rights reserved.
+
+© 2024 Ra'fat Al-Msie'deen
 
