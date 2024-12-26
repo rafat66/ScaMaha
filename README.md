@@ -9,6 +9,8 @@ Abstract: Reverse engineering tools are required to handle the complexity of sof
 Keywords: Software engineering, Reverse engineering, Software re-engineering, Object-Oriented source code, Static code analysis, Software visualization, Software metrics, ScaMaha tool.
 
 
+![image](https://github.com/user-attachments/assets/c8522b9a-489e-45c0-ad96-499bcd67e61c)
+
 
 Google Drive: https://drive.google.com/drive/folders/11_CItJ2pPq_1CAWswcjRsAZnhmQO6OQ8
 
