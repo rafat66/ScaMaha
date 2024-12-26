@@ -22,7 +22,7 @@ ScaMaha presentation: http://dx.doi.org/10.13140/RG.2.2.15401.92004
 ![Logo](https://github.com/user-attachments/assets/d9597837-8bb8-4363-8b4d-4a8c923969f9)
 
 
-
+# ScaMaha: A Tool for Parsing, Analyzing, and Visualizing OO Software Systems. 
 
 © 2024 Ra'fat Al-Msie'deen
 
