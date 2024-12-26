@@ -9,7 +9,12 @@ Keywords: Software engineering, Reverse engineering, Software re-engineering, Ob
 
 
 Google Drive: https://drive.google.com/drive/folders/11_CItJ2pPq_1CAWswcjRsAZnhmQO6OQ8
+
 ScaMaha Tutorial: https://drive.google.com/file/d/1xaGSOpGgikeS4ZhyOflZOlmp2XCO7HFY/view?usp=drive_link
 
+
 ScaMaha article: https://www.researchgate.net/publication/386985118_ScaMaha_A_Tool_for_Parsing_Analyzing_and_Visualizing_Object-Oriented_Software_Systems
+
 ScaMaha presentation: http://dx.doi.org/10.13140/RG.2.2.15401.92004
+
+
