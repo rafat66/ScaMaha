@@ -31,5 +31,20 @@ ScaMaha presentation: http://dx.doi.org/10.13140/RG.2.2.15401.92004
 
 ![image](https://github.com/user-attachments/assets/466fda83-bb0a-4d1b-9285-379a1f1932b9)
 
+
+# ScaMaha: A Comprehensive Tool for Object-Oriented Code Analysis and Visualization
+
+ScaMaha is a reverse engineering tool developed for the analysis and visualization of object-oriented (OO) software systems. It uses Static Code Analysis (SCA) to explore software source code without executing it, which helps overcome the challenges posed by manual code reviews. ScaMaha consists of a modular, flexible, and extensible framework built around a new meta-model, code parser, analyzer, and visualizer.
+
+Code Parsing: ScaMaha’s parser extracts source code using an Abstract Syntax Tree (AST), storing all code identifiers, relations, and structural details.
+
+Code Analysis: The analyzer processes these extracted code files to generate useful software metrics, such as method access relations and other system insights.
+
+Code Visualization: The visualizer converts these code files into graphical representations, such as inheritance relationships, helping users better understand software architecture.
+
+ScaMaha has been successfully applied to various case studies of varying complexity, including small projects (e.g., drawing shapes) to large systems (e.g., ArgoUML). Evaluation metrics, such as precision and recall, confirm the tool's scalability, accuracy, and reliability in parsing, analyzing, and visualizing software systems.
+
+![image](https://github.com/user-attachments/assets/f1838245-12e1-4d04-969a-a5b46499a0b6)
+
 © 2024 Ra'fat Al-Msie'deen
 
