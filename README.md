@@ -48,5 +48,5 @@ ScaMaha has been successfully applied to various case studies of varying complex
 
 ![image](https://github.com/user-attachments/assets/f1838245-12e1-4d04-969a-a5b46499a0b6)
 
-© 2024 Ra'fat Al-Msie'deen
+© 2025 Ra'fat Al-Msie'deen
 
