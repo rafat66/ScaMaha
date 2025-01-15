@@ -19,7 +19,7 @@ ScaMaha Tutorial: https://dx.doi.org/10.13140/RG.2.2.36183.38563
 
 ScaMaha article: https://tinyurl.com/bdd72m42
 
-ScaMaha presentation: http://dx.doi.org/10.13140/RG.2.2.15401.92004
+ScaMaha presentation: http://dx.doi.org/10.13140/RG.2.2.15401.92004/1
 
 
 
