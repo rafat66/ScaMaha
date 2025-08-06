@@ -48,8 +48,5 @@ ScaMaha has been successfully applied to various case studies of varying complex
 
 ![image](https://github.com/user-attachments/assets/f1838245-12e1-4d04-969a-a5b46499a0b6)
 
-[Urban indicators survey - The case of Amman.xlsx](https://github.com/user-attachments/files/21608520/Urban.indicators.survey.-.The.case.of.Amman.xlsx)
-
-
 © 2025 Ra'fat Al-Msie'deen
 
